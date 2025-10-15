@@ -41,7 +41,7 @@
         /* 自定义提示框 */
         .custom-tooltip {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #6693DB;
             color: white;
             padding: 8px 12px;
             border-radius: 4px;
@@ -116,7 +116,7 @@
 
      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 placeholder">
                     <img src="img/Xianghua Zeng.jpg" class="img-responsive" alt="Xianghua Zeng">
-                    <h4><a href="#" class="highlight-name" data-tooltip="获得2024、2025年北航研究生国家奖学金">Xianghua Zeng</a></h4>
+                    <h4><a href="#" class="highlight-name" data-tooltip="获2024、2025年北航研究生国家奖学金">Xianghua Zeng</a></h4>
                     <span class="text-muted">
                         PhD Student<br>
                         (Sept. 2022 - ) <br> 
@@ -135,7 +135,7 @@
 
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 placeholder">
                     <img src="img/zhangjingyun1.jpg" class="img-responsive" alt="Jingyun Zhang">
-                    <h4><a href="#" class="highlight-name" data-tooltip="获得2025年北航研究生国家奖学金">Jingyun Zhang</a></h4>
+                    <h4><a href="#" class="highlight-name" data-tooltip="获2025年北航研究生国家奖学金">Jingyun Zhang</a></h4>
                     <span class="text-muted">
                         PhD Student<br>
                         (Sept. 2023 - ) <br> 
@@ -245,9 +245,9 @@
 		    
 		    <!--   -->
 	
-		<div class="col-xs-2 col-sm-2 placeholder">
-                  <img src="img/huangxiang1.jpg"  class="img-responsive" alt="Generic placeholder thumbnail">
-                  <h4> <a href="">Xiang Huang</a></h4>
+		 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 placeholder">
+                  <img src="img/huangxiang1.jpg"  class="img-responsive" alt="Xiang Huang">
+             <h4><a href="" class="highlight-name" data-tooltip="获2025年北航研究生国家奖学金">Xiang Huang</a></h4>      
                   <span class="text-muted">
                         M.S Student <br>
                        Status Detection <br> 
@@ -491,9 +491,9 @@
                     </span>
                 </div>
 
-		<div class="col-xs-2 col-sm-2 placeholder">
-                  <img src="img/yangzhiqin.jpg"  class="img-responsive" alt="Generic placeholder thumbnail">
-                  <h4> <a href="">Zhiqin Yang</a></h4>
+		 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 placeholder">
+                  <img src="img/yangzhiqin.jpg"  class="img-responsive" alt="Zhiqin Yang">
+			             <h4><a href="" class="highlight-name" data-tooltip="获2024年北航优秀硕士论文">Zhiqin Yang</a></h4>      
                   <span class="text-muted">
                         The Chinese University of Hong Kong <br>
                     </span>
@@ -533,9 +533,9 @@
                     </span>
                 </div>
 
-		 <div class="col-xs-2 col-sm-2 placeholder">
-                  <img src="img/zoudongcheng1.jpg" class="img-responsive" alt="Generic placeholder thumbnail">
-                  <h4><a href="">Dongcheng Zou</a></h4>
+		 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 placeholder">
+                  <img src="img/zoudongcheng1.jpg" class="img-responsive" alt="Dongcheng Zou">
+			      <h4><a href="" class="highlight-name" data-tooltip="获2024年北航研究生国家奖学金、优秀硕士论文">Dongcheng Zou</a></h4>      
                   <span class="text-muted">
                         China Huaneng Group<br>						
                     </span>
@@ -587,7 +587,7 @@
                 const tooltipText = $element.data('tooltip');
                 
                 // 找到对应的图片
-                const $img = $element.closest('.student-card').find('img');
+                const $img = $element.closest('.placeholder').find('img');
                 
                 // 为名字和图片添加悬停事件
                 $element.add($img).hover(
