@@ -86,13 +86,36 @@
                
 			  
 
-		<div class="col-xs-2 col-sm-2 placeholder">
+		<div class="col-xs-2 col-sm-2 placeholder hover-container">
                   <img src="img/Xianghua Zeng.jpg"  class="img-responsive" alt="Generic placeholder thumbnail">
-                  <h4> <a href="">Xianghua Zeng</a></h4>
+                  <h4> <a href="" class="highlight-name">Xianghua Zeng</a><span class="scholarship-info">获得2024年、2025年北航研究生国家奖学金</span></h4>
                   <span class="text-muted">
                         PhD Student<br>
                         (Sept. 2022 - ) <br> 
                     </span>
+			<style>
+        /* 闪烁动画效果 */
+        @keyframes flash {
+            0%, 100% { color: inherit; }
+            50% { color: #ffd700; } /* 黄色 */
+        }
+        .highlight-name {
+            animation: flash 2s infinite; /* 每2秒闪烁一次 */
+            text-decoration: none;
+        }
+        /* 奖学金信息样式 */
+        .scholarship-info {
+            display: none;
+            margin-left: 10px;
+            color: #333;
+            font-size: 0.8em;
+            font-weight: normal;
+        }
+        /* 鼠标悬停在容器上时显示奖学金信息 */
+        .hover-container:hover .scholarship-info {
+            display: inline;
+        }
+    </style>
                 </div>		
 			    
 			    <div class="col-xs-2 col-sm-2 placeholder">
